@@ -24,3 +24,9 @@
     text-align: right;
     font-size: small;
 }
+
+.fieldset__currency {
+    align-items: left;
+    max-width: 200px;
+    display: inline-block;
+}
