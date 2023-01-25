@@ -18,3 +18,9 @@
     color: black;
     font-weight: bold;
 }
+
+.fieldset__paragraph {
+    font-style: italic;
+    text-align: right;
+    font-size: small;
+}
