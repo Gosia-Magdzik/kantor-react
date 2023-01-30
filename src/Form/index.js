@@ -13,10 +13,11 @@ export const Form = ({ calculateResult, result}) => {
     }
 
 return (
-        <fieldset className="fieldset" onSubmit={onSubmit}>
+        <form onSubmit={onSubmit}>
+        <fieldset className="fieldset">
             <legend className="fieldset__legend">Kalkulator walut</legend>
             <p>
-                <span className="fieldset__currency" for="zl">Kwota: </span>
+                <span className="fieldset__currency">Kwota: </span>
                 <input 
                     value={amount}
                     onChange= {({target}) => setAmount(target.value)}
@@ -54,5 +55,6 @@ return (
                 <Result result={result} />
             <p className="fieldset__paragraph">*kurs z 15 grudnia 2022 r. </p>
         </fieldset>
+        </form>
     );
 };
