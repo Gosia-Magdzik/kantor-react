@@ -1,11 +1,10 @@
 
 .fieldset {
+    flex-basis: 550px;
+    margin: 0 auto;
     border: 1px solid black;
     border-radius: 15px;
-    margin: auto;
-    max-width: 500px;
     background-color: rgb(109, 152, 147);
-    margin-top: 10px;
 }
 
 .fieldset__legend {
