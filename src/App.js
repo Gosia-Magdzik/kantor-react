@@ -1,8 +1,11 @@
-import Form from "./Form";
+import  Form  from "./Form";
 
 function App() {
+
   return (
-    <Form/>
+    <fieldset>
+      <Form/>
+    </fieldset>
   );
 }
 

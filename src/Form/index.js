@@ -1,7 +1,6 @@
 import "./style.css";
 
 const Form = (props) => (
-    <form className="body">
         <fieldset className="fieldset">
             <legend className="fieldset__legend">Kalkulator walut</legend>
             <p>
@@ -27,7 +26,6 @@ const Form = (props) => (
 
             <p className="fieldset__paragraph">*kurs z 15 grudnia 2022 r. </p>
         </fieldset>
-    </form>  
     );
 
 export default Form;
