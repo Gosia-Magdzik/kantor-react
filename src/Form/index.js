@@ -13,7 +13,7 @@ export const Form = ({ calculateResult, result}) => {
     }
 
 return (
-        <form onSubmit={onSubmit}>
+        <form className="form" onSubmit={onSubmit}>
         <fieldset className="fieldset">
             <legend className="fieldset__legend">Kalkulator walut</legend>
             <p>
