@@ -1,6 +1,7 @@
 import "./style.css";
 import { currencies } from "../currencies";
 import { useState } from "react";
+import { Result } from "./Result";
 
 export const Form = ({ calculateResult, result}) => {
     const [currency, setCurrency] = useState(currencies[0].short);
@@ -50,10 +51,7 @@ return (
             <p>
                 <button className="fieldset__button">PRZELICZ</button>
             </p>
-            <p className="fieldset__result" for="wynik">Kwota po przeliczeniu:  
-                <strong className="fieldset__output"></strong>
-            </p>
-
+                <Result result={result} />
             <p className="fieldset__paragraph">*kurs z 15 grudnia 2022 r. </p>
         </fieldset>
     );
