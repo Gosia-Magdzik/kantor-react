@@ -1,4 +1,4 @@
-import  Form  from "./Form";
+import { Form }   from "./Form";
 import { currencies } from "./currencies"
 import { useState } from "react";
 
@@ -19,7 +19,10 @@ function App() {
   }
 
   return (
-      <Form/>
+      <Form
+      result={result}
+      calculateResult={calculateResult}
+      />
   );
 }
 
