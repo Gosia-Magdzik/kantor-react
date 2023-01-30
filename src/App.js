@@ -1,5 +1,5 @@
-import { Form }   from "./Form";
-import { currencies } from "./currencies"
+import { Form } from "./Form";
+import { currencies } from "./currencies";
 import { useState } from "react";
 
 function App() {
