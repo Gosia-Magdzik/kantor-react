@@ -3,6 +3,7 @@
 ![gif](images/converter.gif)
 
 # Demo: 
+[Click to see](https://gosia-magdzik.github.io/kantor-react/)
 
 # About project
 
