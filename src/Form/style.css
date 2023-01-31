@@ -6,6 +6,7 @@
     border: 1px solid black;
     border-radius: 15px;
     background-color: rgb(109, 152, 147);
+    box-shadow: 5px 5px 10px #C4BAC6;
 }
 
 .fieldset__legend {
