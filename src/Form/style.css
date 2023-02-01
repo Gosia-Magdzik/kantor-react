@@ -2,11 +2,12 @@
     flex-basis: 550px;
     margin: 0 auto;
 }
+
 .fieldset {
     border: 1px solid black;
     border-radius: 15px;
     background-color: rgb(109, 152, 147);
-    box-shadow: 5px 5px 10px #C4BAC6;
+    box-shadow: 5px 5px 200px 100px rgba(198, 185, 185, 0.846);
 }
 
 .fieldset__legend {
