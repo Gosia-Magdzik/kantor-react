@@ -2,7 +2,7 @@ import "./style.css";
 
 export const Result = ({ result }) => (
     <p className="fieldset__result">
-        {result !== undefined && (
+        {result && (
             <>
               Kwota po przeliczeniu&nbsp;={" "}
             
