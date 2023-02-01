@@ -11,17 +11,17 @@ function App() {
       .find(({short}) => short === currency)
       .rate;
 
-    setResult({
-     sourceAmount: +amount,
-     targetAmount: amount / rate,
-     currency 
-    });
+      setResult({
+      sourceAmount: +amount,
+      targetAmount: amount / rate,
+      currency 
+      });
   }
 
   return (
       <Form
-      result={result}
-      calculateResult={calculateResult}
+        result={result}
+        calculateResult={calculateResult}
       />
   );
 }
