@@ -15,7 +15,7 @@ export const Clock = () => {
 
     useEffect(() => {
         const intervalId = setInterval(() => {
-            setDate (new Date());
+            setDate(new Date());
         }, 1000);
 
         return () => {
@@ -30,4 +30,4 @@ export const Clock = () => {
             {formatDate(date)}
         </div>
     )
-    };
+};
