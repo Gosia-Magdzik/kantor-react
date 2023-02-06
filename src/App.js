@@ -19,10 +19,10 @@ function App() {
   }
 
   return (
-      <Form
+        <Form
         result={result}
         calculateResult={calculateResult}
-      />
+        />        
   );
 }
 
