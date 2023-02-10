@@ -1,7 +1,7 @@
-import "./style.css";
+import { StyleResult } from "./styled";
 
 export const Result = ({ result }) => (
-    <p className="fieldset__result">
+    <StyleResult>
         {result && (
             <>
               Kwota po przeliczeniu&nbsp;={" "}
@@ -11,6 +11,6 @@ export const Result = ({ result }) => (
             </strong>  
             </>
         )}
-    </p>
+    </StyleResult>
 );
 
