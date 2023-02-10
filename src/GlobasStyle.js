@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import background from "./currency.jpg";
 
 export const GlobalStyle = createGlobalStyle`
     html {
@@ -14,7 +15,7 @@ export const GlobalStyle = createGlobalStyle`
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-image: url("../images/currency.jpg" );
+    background-image: url("${background}");
     background-size: cover; 
     background-position: center;
     font-family: Verdana, Tahoma, sans-serif;
