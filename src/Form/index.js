@@ -1,26 +1,33 @@
-import "./style.css";
 import { currencies } from "../currencies";
 import { useState } from "react";
 import { Result } from "./Result";
 import { Clock } from "../Clock";
+import { 
+    StyledForm,
+    StyledFieldset,
+    StyledLegend,
+    StyledCurrency,
+    StyledButton
+
+ } from "./styled";
 
 
 export const Form = ({ calculateResult, result}) => {
         const [currency, setCurrency] = useState(currencies[0].short);
         const [amount, setAmount] = useState("");
 
-    const onSubmit = (event) => {
-        event.preventDefault();
-        calculateResult(currency, amount);
+        const onSubmit = (event) => {
+            event.preventDefault();
+            calculateResult(currency, amount);
     }
 
 return (
-        <form className="form" onSubmit={onSubmit}>
-            <fieldset className="fieldset">
+        <StyledForm onSubmit={onSubmit}>
+            <StyledFieldset>
                 <Clock />
-                <legend className="fieldset__legend">Kalkulator walut</legend>
+                <StyledLegend>Kalkulator walut</StyledLegend>
                 <p>
-                    <span className="fieldset__currency">Kwota: </span>
+                    <StyledCurrency>Kwota: </StyledCurrency>
                     <input 
                         value={amount}
                         onChange= {({target}) => setAmount(target.value)}
@@ -53,12 +60,10 @@ return (
                     </select>
                 </p>
                 <p>
-                    <button className="fieldset__button">PRZELICZ</button>
+                    <StyledButton>PRZELICZ</StyledButton>
                 </p>
                     <Result result={result} />
-                <p className="fieldset__paragraph">*kurs z 15 grudnia 2022 r. 
-                </p>
-            </fieldset>
-        </form>
+            </StyledFieldset>
+        </StyledForm>
     );
 };
