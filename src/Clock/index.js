@@ -1,4 +1,4 @@
-import "./style.css";
+import { StyledClock } from "./styled";
 import { useState, useEffect } from "react";
 
 const formatDate = (date) => date.toLocaleDateString(undefined, {
@@ -24,10 +24,10 @@ export const Clock = () => {
     }, []);
 
     return (
-        <div className="clock">
+        <StyledClock>
             Dzisiaj jest
             {" "}
             {formatDate(date)}
-        </div>
+        </StyledClock>
     )
 };
