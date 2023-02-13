@@ -1,5 +1,6 @@
 import { StyledClock } from "./styled";
-import { useState, useEffect } from "react";
+import { useCurrentDate } from "./useCurrentDate";
+
 
 const formatDate = (date) => date.toLocaleDateString(undefined, {
     weekday: "long",
@@ -11,17 +12,7 @@ const formatDate = (date) => date.toLocaleDateString(undefined, {
 });
 
 export const Clock = () => {
-    const [date, setDate] = useState(new Date());
-
-    useEffect(() => {
-        const intervalId = setInterval(() => {
-            setDate(new Date());
-        }, 1000);
-
-        return () => {
-            clearInterval(intervalId);
-        };
-    }, []);
+    const date = useCurrentDate();
 
     return (
         <StyledClock>
@@ -31,3 +22,4 @@ export const Clock = () => {
         </StyledClock>
     )
 };
+
