@@ -1,7 +1,11 @@
 export const theme = {
     color: {
-        black: "#000000",
-
+        black:          "#000000",
+        azure:          "#0080FF",
+        jupiter:        "#6D9093",
+        PinkSwan:       "#c6b9b9d8",
+        MarigoldYellow: "#F6F678",
+        GrayNickel:     "#CACAC4"
     },
 
     breakpoint: {
