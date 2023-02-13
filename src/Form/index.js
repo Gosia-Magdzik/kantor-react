@@ -7,8 +7,8 @@ import {
     StyledFieldset,
     StyledLegend,
     StyledCurrency,
-    StyledButton
-
+    StyledButton,
+    StyledInput,
  } from "./styled";
 
 
@@ -28,24 +28,23 @@ return (
                 <StyledLegend>Kalkulator walut</StyledLegend>
                 <p>
                     <StyledCurrency>Kwota: </StyledCurrency>
-                    <input 
+                    <StyledInput
                         value={amount}
                         onChange= {({target}) => setAmount(target.value)}
-                        className="fieldset__output" 
                         type="number" 
                         step="0.1" 
                         name="zl" 
                         id="zl" 
                         required 
-                        placeholder="Wpisz kwotę w zł"
+                        placeholder="   Wpisz kwotę w zł"
                     />
                 </p>
                 <p>
                     <span className="fieldset__currency">
                         Waluta*:
                     </span>
-                    <select 
-                        className="fieldset__output"
+                    <StyledInput
+                        as="select"
                         value={currency}
                         onChange= {({target}) => setCurrency(target.value)}
                     >
@@ -57,7 +56,7 @@ return (
                                 {currency.name}
                             </option>
                         )))}
-                    </select>
+                    </StyledInput>
                 </p>
                 <p>
                     <StyledButton>PRZELICZ</StyledButton>

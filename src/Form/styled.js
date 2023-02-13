@@ -6,7 +6,7 @@ export const StyledForm = styled.form`
 `;
 
 export const StyledFieldset = styled.fieldset`
-    border: 1px solid black;
+    border: 1px solid ${({theme}) => theme.color.black};
     border-radius: 15px;
     background-color: ${({theme}) => theme.color.jupiter};
     box-shadow: 5px 5px 200px 100px ${({theme}) => theme.color.PinkSwan};
@@ -50,9 +50,27 @@ export const StyledButton = styled.button`
 
     &:active {
         filter: brightness(110%);
-        box-shadow: 2px 3px 4px ${({theme}) => theme.color.GrayNickel};;
+        box-shadow: 2px 3px 4px ${({theme}) => theme.color.GrayNickel};
         transition: 0.5s;
         scale: 1.08;
     }
 `;
+
+export const StyledInput = styled.input`
+    border: 1px solid ${({theme}) => theme.color.black};
+    border-radius: 15px;
+    background-color: ${({theme}) => theme.color.jupiter};
+    box-shadow: 5px 5px 15px  ${({theme}) => theme.color.PinkSwan};
+    height: 30px;
+
+    ::placeholder {
+        color: ${({theme}) => theme.color.GrayNickel};
+        font-style: italic;
+        font-size: 0.9em;
+    }
+
+
+`;
+
+
 
