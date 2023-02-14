@@ -11,7 +11,6 @@ import {
     StyledInput,
  } from "./styled";
 
-
 export const Form = ({ calculateResult, result}) => {
         const [currency, setCurrency] = useState(currencies[0].short);
         const [amount, setAmount] = useState("");

@@ -3,21 +3,21 @@ import background from "./currency.jpg";
 
 export const GlobalStyle = createGlobalStyle`
     html {
-    box-sizing: border-box;
+        box-sizing: border-box;
     }
 
     *, ::before, ::after {
-    box-sizing: inherit;
+        box-sizing: inherit;
     }
 
     #root {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background-image: url("${background}");
-    background-size: cover; 
-    background-position: center;
-    font-family: Verdana, Tahoma, sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background-image: url("${background}");
+        background-size: cover; 
+        background-position: center;
+        font-family: Verdana, Tahoma, sans-serif;
     }
 `;

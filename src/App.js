@@ -20,8 +20,8 @@ function App() {
 
   return (
         <Form
-        result={result}
-        calculateResult={calculateResult}
+          result={result}
+          calculateResult={calculateResult}
         />        
   );
 }
