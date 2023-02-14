@@ -68,9 +68,17 @@ export const StyledInput = styled.input`
         font-style: italic;
         font-size: 0.9em;
     }
-
-
 `;
+
+export const Loading = styled.p`
+    color: ${({theme}) => theme.color.GrayNickel};
+`;
+
+export const Failure = styled.p`
+    color: ${({theme}) => theme.color.AquaForest};
+`;
+
+
 
 
 

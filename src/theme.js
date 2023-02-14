@@ -5,7 +5,9 @@ export const theme = {
         jupiter:        "#6D9093",
         PinkSwan:       "#c6b9b9d8",
         MarigoldYellow: "#F6F678",
-        GrayNickel:     "#CACAC4"
+        GrayNickel:     "#CACAC4",
+        WellRead:       "#A42E2D",
+        AquaForest:     "#74AB73",
     },
 
     breakpoint: {

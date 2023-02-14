@@ -9,6 +9,8 @@ import {
     StyledCurrency,
     StyledButton,
     StyledInput,
+    Loading,
+    Failure,
  } from "./styled";
 
 export const Form = ({ calculateResult, result}) => {
