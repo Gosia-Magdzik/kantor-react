@@ -11,6 +11,6 @@ export const theme = {
     },
 
     breakpoint: {
-        phone: "600px",    
+        phone:          "600px",    
     },
 };
