@@ -70,12 +70,10 @@ export const StyledInput = styled.input`
     }
 `;
 
-export const Loading = styled.p`
-    color: ${({theme}) => theme.color.GrayNickel};
-`;
-
-export const Failure = styled.p`
-    color: ${({theme}) => theme.color.AquaForest};
+export const Info = styled.p`
+    text-align: center;
+    font-family: monospace;
+    color: ${({ theme }) => theme.color.black};
 `;
 
 
