@@ -1,5 +1,4 @@
-import { currencies } from "../currencies";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { Result } from "./Result";
 import { Clock } from "../Clock";
 import { 
@@ -9,60 +8,86 @@ import {
     StyledCurrency,
     StyledButton,
     StyledInput,
-    Loading,
-    Failure,
+    Info,
  } from "./styled";
+ import Loading from "./Loading";
+ import Error from "./Error";
+ import { useRatesData } from "./useRatesData";
 
-export const Form = ({ calculateResult, result}) => {
-        const [currency, setCurrency] = useState(currencies[0].short);
+export const Form = () => {
+        const [currency, setCurrency] = useState("EUR");
         const [amount, setAmount] = useState("");
+        const [result, setResult] = useState();
+        const ratesData = useRatesData();
+        const { rates, date, status } = ratesData;
+        const inputRef = useRef(null);
 
         const onSubmit = (event) => {
             event.preventDefault();
-            calculateResult(currency, amount);
-    }
+            calculateResult(amount, currency);
+        };
+            if (status === "loading") {
+                return <Loading/>;
+            }
+            if (status === "error") {
+                return <Error/>;
+            }
+
+        const calculateResult = (amount, currency) => {
+            const rates = ratesData.rates[currency];
+            inputRef.current.focus();
+        }
+            setResult({
+                sourceAmount: +amount,
+                targetAmount: amount * rates,
+                currency,
+            });
 
 return (
         <StyledForm onSubmit={onSubmit}>
             <StyledFieldset>
-                <Clock />
+                <Clock/>
                 <StyledLegend>Kalkulator walut</StyledLegend>
                 <p>
                     <StyledCurrency>Kwota: </StyledCurrency>
                     <StyledInput
-                        value={amount}
-                        onChange= {({target}) => setAmount(target.value)}
+                        value={ amount }
+                        onChange= {({ target }) => setAmount(target.value)}
                         type="number" 
                         step="0.1" 
                         name="zl" 
                         id="zl" 
                         required 
                         placeholder="   Wpisz kwotę w zł"
+                        ref={inputRef}
                     />
                 </p>
                 <p>
-                    <span className="fieldset__currency">
-                        Waluta*:
-                    </span>
+                    <span> Waluta:</span>
                     <StyledInput
-                        as="select"
-                        value={currency}
-                        onChange= {({target}) => setCurrency(target.value)}
+                        as= "select"
+                        value={ currency }
+                        onChange= {({ target }) => {
+                            setCurrency(target.value);
+                        }}
                     >
-                        {currencies.map((currency => (
+                        {Object.keys(ratesData.rates).map((currency) => (
                             <option
-                                key={currency.short}
-                                value={currency.short}
-                            >
-                                {currency.name}
+                                key= {currency}
+                                value= {currency}
+                            > 
+                                {currency}
                             </option>
-                        )))}
+                            ))}
                     </StyledInput>
                 </p>
                 <p>
                     <StyledButton>PRZELICZ</StyledButton>
                 </p>
-                    <Result result={result} />
+                    <Result result= {result} />
+                <p>
+                    <Info>Kursy walut pobierane są z Narodowego Banku Centrlnego na dzień: {date} </Info>
+                </p>    
             </StyledFieldset>
         </StyledForm>
     );
