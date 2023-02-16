@@ -4,6 +4,7 @@ import background from "./currency.jpg";
 export const GlobalStyle = createGlobalStyle`
     html {
         box-sizing: border-box;
+        scroll-behavior: smooth;
     }
 
     *, ::before, ::after {
@@ -18,6 +19,6 @@ export const GlobalStyle = createGlobalStyle`
         background-image: url("${background}");
         background-size: cover; 
         background-position: center;
-        font-family: Verdana, Tahoma, sans-serif;
+        font-family: 'Lato', sans-serif;
     }
 `;
