@@ -1,8 +1,8 @@
 # Currency Converter
 
-![gif height="250"](images/KantorReact.gif)
+![gif height="25"](images/KantorReact.gif)
 
-# Demo website: [open in a new tab](https://gosia-magdzik.github.io/kantor-react/){:target="_blank"}
+# Demo website: [Click here](https://gosia-magdzik.github.io/kantor-react/)
 
 # About project
 
@@ -33,7 +33,7 @@ You may also see any lint errors in the console.
 
 ## Technologies used
 
-<img src="images/bulb.png" height="25"/> **HTML**  <img src="images/bulb.png" height="25"/><img src="images/bulb.png" height="25"/> **JS**         <img src="images/bulb.png" height="25"/> **ES6+** **CSS**
+<img src="images/bulb.png" height="25"/> **HTML**  <img src="images/bulb.png" height="25"/>**CSS**<img src="images/bulb.png" height="25"/> **JS**         <img src="images/bulb.png" height="25"/> **ES6+** **CSS**
 
 <img src="images/bulb.png" height="25"/> **BEM**   <img src="images/bulb.png" height="25"/> **React** <img src="images/bulb.png" height="25"/> **API**   <img src="images/bulb.png" height="25"/> **GIT**
 
