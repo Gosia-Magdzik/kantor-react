@@ -36,12 +36,13 @@ export const Form = () => {
         const calculateResult = (amount, currency) => {
             const rates = ratesData.rates[currency];
             inputRef.current.focus();
-        }
+        
             setResult({
                 sourceAmount: +amount,
                 targetAmount: amount * rates,
                 currency,
             });
+        }
 
 return (
         <StyledForm onSubmit={onSubmit}>
@@ -67,11 +68,9 @@ return (
                     <StyledInput
                         as= "select"
                         value={ currency }
-                        onChange= {({ target }) => {
-                            setCurrency(target.value);
-                        }}
+                        onChange= {({ target }) => setCurrency(target.value)}
                     >
-                        {Object.keys(ratesData.rates).map((currency) => (
+                        {Object.keys(rates || {}).map((currency) => (
                             <option
                                 key= {currency}
                                 value= {currency}
@@ -86,7 +85,8 @@ return (
                 </p>
                     <Result result= {result} />
                 <p>
-                    <Info>Kursy walut pobierane są z Narodowego Banku Centrlnego na dzień: {date} </Info>
+                <hr />
+                    <Info>Aktualne kursy walut pobierane są z Narodowego Banku Centrlnego </Info>
                 </p>    
             </StyledFieldset>
         </StyledForm>
