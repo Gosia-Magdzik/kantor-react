@@ -22,17 +22,6 @@ export const Form = () => {
         const { rates, status } = ratesData;
         const inputRef = useRef(null);
 
-        const onSubmit = (event) => {
-            event.preventDefault();
-            calculateResult(amount, currency);
-        };
-            if (status === "loading") {
-                return <Loading/>;
-            }
-            if (status === "error") {
-                return <Error/>;
-            }
-
         const calculateResult = (amount, currency) => {
             const rates = ratesData.rates[currency];
             inputRef.current.focus();
@@ -43,6 +32,17 @@ export const Form = () => {
                 currency,
             });
         }
+
+        const onSubmit = (event) => {
+            event.preventDefault();
+            calculateResult(amount, currency);
+        };
+            if (status === "loading") {
+                return <Loading/>;
+            }
+            if (status === "error") {
+                return <Error/>;
+            }
 
     return (
         <StyledForm onSubmit={onSubmit}>
