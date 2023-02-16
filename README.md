@@ -1,6 +1,6 @@
 # Currency Converter
 
-![gif](images/converter.gif)
+![gif](images/KantorReact.gif)
 
 # Demo website: [open in a new tab](https://gosia-magdzik.github.io/kantor-react/){target="_blank"} 
 
