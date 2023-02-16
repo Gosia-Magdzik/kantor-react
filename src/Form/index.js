@@ -19,7 +19,7 @@ export const Form = () => {
         const [amount, setAmount] = useState("");
         const [result, setResult] = useState();
         const ratesData = useRatesData();
-        const { rates, date, status } = ratesData;
+        const { rates, status } = ratesData;
         const inputRef = useRef(null);
 
         const onSubmit = (event) => {
@@ -50,7 +50,7 @@ return (
                 <Clock/>
                 <StyledLegend>Kalkulator walut</StyledLegend>
                 <p>
-                    <StyledCurrency>Kwota: </StyledCurrency>
+                    <StyledCurrency>Kwota &nbsp;&nbsp;</StyledCurrency>
                     <StyledInput
                         value={ amount }
                         onChange= {({ target }) => setAmount(target.value)}
@@ -59,12 +59,12 @@ return (
                         name="zl" 
                         id="zl" 
                         required 
-                        placeholder="   Wpisz kwotę w zł"
+                        placeholder="&nbsp; Wpisz kwotę w zł"
                         ref={inputRef}
                     />
                 </p>
                 <p>
-                    <span> Waluta:</span>
+                    <span> Waluta &nbsp;</span>
                     <StyledInput
                         as= "select"
                         value={ currency }
@@ -83,9 +83,11 @@ return (
                 <p>
                     <StyledButton>PRZELICZ</StyledButton>
                 </p>
-                    <Result result= {result} />
                 <p>
-                <hr />
+                    <Result result= { result} />
+                </p>
+                <hr/>
+                <p>
                     <Info>Aktualne kursy walut pobierane są z Narodowego Banku Centrlnego </Info>
                 </p>    
             </StyledFieldset>
