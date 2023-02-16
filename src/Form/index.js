@@ -9,10 +9,10 @@ import {
     StyledButton,
     StyledInput,
     Info,
- } from "./styled";
- import Loading from "./Loading";
- import Error from "./Error";
- import { useRatesData } from "./useRatesData";
+} from "./styled";
+import Loading from "./Loading";
+import Error from "./Error";
+import { useRatesData } from "./useRatesData";
 
 export const Form = () => {
         const [currency, setCurrency] = useState("EUR");
@@ -44,7 +44,7 @@ export const Form = () => {
             });
         }
 
-return (
+    return (
         <StyledForm onSubmit={onSubmit}>
             <StyledFieldset>
                 <Clock/>
@@ -77,7 +77,7 @@ return (
                             > 
                                 {currency}
                             </option>
-                            ))}
+                        ))}
                     </StyledInput>
                 </p>
                 <p>
@@ -88,7 +88,7 @@ return (
                 </p>
                 <hr/>
                 <p>
-                    <Info>Aktualne kursy walut pobierane są z Narodowego Banku Centrlnego </Info>
+                    <Info> Aktualne kursy walut pobierane są z Narodowego Banku Centrlnego </Info>
                 </p>    
             </StyledFieldset>
         </StyledForm>
