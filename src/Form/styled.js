@@ -62,6 +62,8 @@ export const StyledInput = styled.input`
     background-color: ${({theme}) => theme.color.jupiter};
     box-shadow: 5px 5px 15px  ${({theme}) => theme.color.PinkSwan};
     height: 30px;
+    min-width: 100px;
+    text-align: center;
 
     ::placeholder {
         color: ${({theme}) => theme.color.white};

@@ -8,4 +8,5 @@ export const StyleResult = styled.p`
     background-color: ${({theme}) => theme.color.MarigoldYellow};
     margin: 0 auto;
     box-shadow: 2px 3px 4px ${({theme}) => theme.color.GrayNickel};
+    text-align: center;
 `;

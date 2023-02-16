@@ -8,6 +8,7 @@ export const theme = {
         white:          "#FFFFFF",
         WellRead:       "#A42E2D",
         AquaForest:     "#74AB73",
+        Tamarillo:      "#AE1325",
     },
 
     breakpoint: {
