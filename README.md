@@ -14,7 +14,7 @@ Project was intended to create a simple app which convert polish zloty into up-t
 
 *The application is working on as well as on computers as on mobile devices*
 
-<img src="images/lamp.png" height="25"/>Enjoy <img src="images/lamp.png" height="25"/>
+<img src="images/Party.png" height="25"/>Enjoy <img src="images/Party.png" height="25"/>
 
 
 ## This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -33,13 +33,11 @@ You may also see any lint errors in the console.
 
 ## Technologies used
 
-<img src="images/bulb.png" height="25"/> **HTML**  <img src="images/bulb.png" height="25"/> **CSS**
+<img src="images/bulb.png" height="25"/> **HTML**  <img src="images/bulb.png" height="25"/><img src="images/bulb.png" height="25"/> **JS**         <img src="images/bulb.png" height="25"/> **ES6+** **CSS**
 
-<img src="images/bulb.png" height="25"/> **JS**         <img src="images/bulb.png" height="25"/> **ES6+**
+<img src="images/bulb.png" height="25"/> **BEM**   <img src="images/bulb.png" height="25"/> **React** <img src="images/bulb.png" height="25"/> **API**   <img src="images/bulb.png" height="25"/> **GIT**
 
-<img src="images/bulb.png" height="25"/> **BEM**   <img src="images/bulb.png" height="25"/> **React**
 
-<img src="images/bulb.png" height="25"/> **API**   <img src="images/bulb.png" height="25"/> **GIT**
 
 
 
