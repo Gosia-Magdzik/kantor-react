@@ -1,8 +1,8 @@
 # Currency Converter
 
-![gif](images/KantorReact.gif)
+![gif height="250"](images/KantorReact.gif)
 
-# Demo website: [open in a new tab](https://gosia-magdzik.github.io/kantor-react/){target="_blank"} 
+# Demo website: [open in a new tab](https://gosia-magdzik.github.io/kantor-react/){:target="_blank"}
 
 # About project
 
