@@ -59,7 +59,7 @@ return (
                         name="zl" 
                         id="zl" 
                         required 
-                        placeholder="&nbsp; Wpisz kwotę w zł"
+                        placeholder="&nbsp;Wpisz kwotę w zł"
                         ref={inputRef}
                     />
                 </p>

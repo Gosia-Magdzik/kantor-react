@@ -64,7 +64,7 @@ export const StyledInput = styled.input`
     height: 30px;
 
     ::placeholder {
-        color: ${({theme}) => theme.color.GrayNickel};
+        color: ${({theme}) => theme.color.white};
         font-style: italic;
         font-size: 0.9em;
     }
