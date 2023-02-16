@@ -84,7 +84,7 @@ export const Form = () => {
                     <StyledButton>PRZELICZ</StyledButton>
                 </p>
                 <p>
-                    <Result result= { result} />
+                    <Result result= { result } />
                 </p>
                 <hr/>
                 <p>
