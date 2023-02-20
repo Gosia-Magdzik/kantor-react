@@ -6,7 +6,7 @@ export const Fieldset = styled.fieldset`
     background-color: ${({ theme }) => theme.color.jupiter};
     box-shadow: 5px 5px 200px 100px ${({ theme }) => theme.color.PinkSwan};
     flex-basis: 600px;
-    height: 330px;
+    height: 350px;
     margin: 0 auto;
 `;
 

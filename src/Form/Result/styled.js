@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyleResult = styled.p`
-    padding: 10px;
+    padding: 5px;
     border: 1px solid  ${({theme}) => theme.color.black};
     border-radius: 15px;
     max-width: 400px;
@@ -9,4 +9,5 @@ export const StyleResult = styled.p`
     margin: 0 auto;
     box-shadow: 2px 3px 4px ${({theme}) => theme.color.GrayNickel};
     text-align: center;
+    height: 35px;
 `;
