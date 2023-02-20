@@ -37,12 +37,13 @@ export const Form = () => {
             event.preventDefault();
             calculateResult(amount, currency);
         };
-            if (status === "loading") {
-                return <Loading/>;
-            }
-            if (status === "error") {
-                return <Error/>;
-            }
+            
+        if (status === "loading") {
+            return <Loading/>;
+        }
+        if (status === "error") {
+            return <Error/>;
+        }
 
     return (
         <StyledForm onSubmit={onSubmit}>
