@@ -7,9 +7,11 @@ export const useRatesData = () => {
     });
 
     useEffect(() => {
+        const url = "https://api.exchangerate.host/latest?base=PLN&symbols=USD,CZK,EUR,GBP,JOD,NOK,JPY,AUD,CAD,CHF,CNH,BGN,EGP,ILS&";
+        
         const getRates = async () => {
             try {
-                const response = await axios.get("https://api.exchangerate.host/latest?base=PLN&symbols=USD,CZK,EUR,GBP,JOD,NOK,JPY,AUD,CAD,CHF,CNH,BGN,EGP,ILS&");
+                const response = await axios.get(url);
                     setRatesData({
                         date: response.data.date,
                         rates: response.data.rates,
