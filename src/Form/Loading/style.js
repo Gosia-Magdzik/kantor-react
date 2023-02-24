@@ -10,7 +10,6 @@ export const Fieldset = styled.fieldset`
     margin: 0 auto;
 `;
 
-
 export const LoadingStyle = styled.p`
     color: ${({ theme }) => theme.color.MarigoldYellow};
     text-align: center;
@@ -46,9 +45,23 @@ export const Spin = styled.p`
   }
 `;
 
-export const Wave = styled.div`
+export const Wave = styled.span`
     display: inline-block;
-    animation: wave 1s ease-in-out infinite;
+    
+    span {
+       animation: wave 1s  ease-in-out infinite; 
+    }
+    
+        span:nth-child(1) { animation-delay: 0.1s; }
+        span:nth-child(2) { animation-delay: 0.2s; }
+        span:nth-child(3) { animation-delay: 0.3s; }
+        span:nth-child(4) { animation-delay: 0.4s; }
+        span:nth-child(5) { animation-delay: 0.5s; }
+        span:nth-child(6) { animation-delay: 0.6s; }
+        span:nth-child(7) { animation-delay: 0.7s; }
+        span:nth-child(8) { animation-delay: 0.8s; }
+        span:nth-child(9) { animation-delay: 0.9s; } 
+    
 
     @keyframes wave{
         0%{

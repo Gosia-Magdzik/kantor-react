@@ -1,12 +1,17 @@
 import { LoadingStyle, StyledLegend, Fieldset, Spin, Wave } from "./style";
 
+const string = "Pobieramy".split("")
 
 const Loading = () => {
     return  <Fieldset>
                 <StyledLegend>Kalkulator walut</StyledLegend> 
                 <LoadingStyle>
                         <Wave>
-                            ..Pobieramy dane
+                            {string.map((item, index) => (
+                            <span key={index}>
+                                {item}
+                            </span>
+                            ))}
                         </Wave>
                         <Spin>
                             ⏳⌛️⏳ 
