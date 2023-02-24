@@ -47,10 +47,8 @@ export const Spin = styled.p`
 
 export const Wave = styled.span`
     display: inline-block;
+    animation: wave 1s  ease-in-out infinite; 
     
-    span {
-       animation: wave 1s  ease-in-out infinite; 
-    }
     
         span:nth-child(1) { animation-delay: 0.1s; }
         span:nth-child(2) { animation-delay: 0.2s; }
